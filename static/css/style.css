@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
 :root{
     --beige: rgb(228,213,201);
     --blanco: rgb(255,252,249);
@@ -5,6 +7,7 @@
 	--fuente-cursiva: 'Niconne', sans;
 	--fuente-normal: 'EB Garamond', sans;
 	--fuente-ancha: 'Fredericka the great', cursive;
+	--fuente-sans: 'Noto Sans JP', sans-serif;
 
 }
 
@@ -71,7 +74,7 @@ h1,h3,h4,h5,ol,ul{
 	text-shadow: 1px 1px 6px white;
 }
 .mi-nav{
-	background-image: url(../img/bg3.jpg);
+	background-image: url(/static/img/p3.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -145,7 +148,7 @@ h1,h3,h4,h5,ol,ul{
 #frase{
     text-align: center;
     font-family: var(--fuente-normal);
-    font-size: 3.2em;
+    font-size: 3em;
     color: black;
 
 }
@@ -177,35 +180,35 @@ h1,h3,h4,h5,ol,ul{
 }
 
 .card1{
-	background-image: url(../img/viedma.jpg);
+	background-image: url(/static/img/viedma.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card2{
-	background-image: url(../img/shop.jpg);
+	background-image: url(/static/img/juli2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card3{
-	background-image: url(../img/contact.jpg);
+	background-image: url(/static/img/contact.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card4{
-	background-image: url../img/.jpg);
+	background-image: url(/static/img/p4.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card5{
-	background-image: url(../img/receta.jpg);
+	background-image: url(/static/img/receta.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -233,11 +236,11 @@ h1,h3,h4,h5,ol,ul{
 }
 
 .titular h4{
-	font-size: 2.9em;
+	font-size: 3em;
 	font-family: var(--fuente-ancha);
 }
 .titular h3{
-	font-size: 1.8em;
+	font-size: 1.9em;
 	font-family: var(--fuente-cursiva);
 }
 
@@ -259,7 +262,7 @@ h1,h3,h4,h5,ol,ul{
 .card-body{
 	width:100%;
 	height: fit-content;
-	background-image: url(../img/);
+	background-image: url(/static/img/);
 }
 .card-body .link{
 	color: black;
@@ -283,52 +286,111 @@ h1,h3,h4,h5,ol,ul{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url(../img/b1.jpg);
+	background-image: url(/static/img/b1a.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 15vh;
+	height: 20vh;
 }
 
-#destacados img{
-	width: auto;
-	max-height: 250px;
-}
-#destacados .dest-fondo{
-	margin:0;
-	padding: 0;
-	background-color: var(--beige);
-}
-#destacados span{
-	letter-spacing: 1px;
-	font-family: var(--fuente-cursiva);
+.carousel-item{
+	max-height:600px;
 }
 
-#destacados p{
-	font-size: 1.5em;
-	font-family: var(--fuente-normal);
+.carousel-item img{
+	object-fit: contain;
+}
+#sobre-mi{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	background-image: url(/static/img/a.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	
 }
 
-#sobre-mi img{
+#img-juli{
+	max-width: 350px;
 	border-radius: 50%;
+	margin: auto;    
+    display: block;
+	box-shadow: 0 0 1px 5px rgba(0, 0, 0, 0.3)
 }
 
-#col-bio{
-	background-color: var(--beige);
-}
-#col-bio h1{
-	font-size: 2.9em;
-	font-family: var(--fuente-cursiva);
-}
-
-#col-bio p{
-	font-size: 2.2em;
+#sobre-mi h1{
+	padding-top:1ch ;
+	font-size: 2.6em;
 	font-family: var(--fuente-normal);
 }
 
-#julieta{
-	font-size: 6.8em;
+#sobre-mi p{
+	font-size: 2em;
+	line-height: 1.6;
+	font-family: var(--fuente-sans);
+}
+
+#sobre-mi p:nth-child(2){
+	padding: 50px 0;
+}
+#p1-julibio{
+	transform: translateX(-100px);
+}
+
+#p2-julibio{
+	transform: translateX(-100px);
+}
+
+#social-bio{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#social-bio a i{
+	color:#000;
+	transform: translateX(-150px);
+	margin-top: 78px;
+	margin-left:1ch;
+	padding: 15px;
+	transition: all 250ms;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#social-bio a i:hover{
+	color:var(--beige);
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+	position:absolute;
+}
+
+#locacion h1{
 	font-family: var(--fuente-cursiva);
-	transform: translateY(-65px);
+	font-size: 2.2em;
+	padding: 30px;
+}
+#contacto li{
+	font-size: 1.9em;
+	font-family: var(--fuente-normal);
+	margin: 50px 30px;
+	display: flex;
+}
+
+#contacto li i{
+	padding-right: 20px;
 }
