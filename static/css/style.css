@@ -74,7 +74,7 @@ h1,h3,h4,h5,ol,ul{
 	text-shadow: 1px 1px 6px white;
 }
 .mi-nav{
-	background-image: url(/static/img/p3.jpeg);
+	background-image: url(../img/p3.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -180,35 +180,35 @@ h1,h3,h4,h5,ol,ul{
 }
 
 .card1{
-	background-image: url(/static/img/viedma.jpg);
+	background-image: url(../img/viedma.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card2{
-	background-image: url(/static/img/juli2.jpg);
+	background-image: url(../img/juli2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card3{
-	background-image: url(/static/img/contact.jpg);
+	background-image: url(../img/contact.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card4{
-	background-image: url(/static/img/p4.jpeg);
+	background-image: url(../img/p4.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card5{
-	background-image: url(/static/img/receta.jpg);
+	background-image: url(../img/receta.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -262,7 +262,7 @@ h1,h3,h4,h5,ol,ul{
 .card-body{
 	width:100%;
 	height: fit-content;
-	background-image: url(/static/img/);
+	background-image: url(../img/);
 }
 .card-body .link{
 	color: black;
@@ -286,7 +286,7 @@ h1,h3,h4,h5,ol,ul{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url(/static/img/b1a.jpg);
+	background-image: url(../img/b1a.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -306,7 +306,7 @@ h1,h3,h4,h5,ol,ul{
 	align-items: center;
 	justify-content: center;
 	height: 75vh;
-	background-image: url(/static/img/a.jpg);
+	background-image: url(../img/a.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
