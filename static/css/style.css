@@ -3,17 +3,43 @@
 :root{
     --beige: rgb(228,213,201);
     --blanco: rgb(255,252,249);
-
 	--fuente-cursiva: 'Niconne', sans;
 	--fuente-normal: 'EB Garamond', sans;
 	--fuente-ancha: 'Fredericka the great', cursive;
 	--fuente-sans: 'Noto Sans JP', sans-serif;
-
 }
 
-*{
-	font-family: var(--fuente-normal);
+/* ANIMACIONES */
+
+@keyframes transitionIn{
+	from{
+		opacity: 0;
+		transform: scaleX(0);
+	}
+	to{
+		opacity: 1;
+		transform: scaleX(600px);
+	}
 }
+
+.animation-transitionIn{
+	animation: transitionIn 0.75s;
+}
+
+.slide-in-from-right {
+	animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+  }
+  
+  @keyframes slideInFromRight {
+	0% {
+	  transform: translateX(50%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  
+/* GENERAL */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -34,6 +60,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: var(--fuente-normal);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -44,7 +71,7 @@ body {
 	line-height: 1;
     background-color: var(--blanco);
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {
@@ -64,6 +91,10 @@ h1,h3,h4,h5,ol,ul{
 	letter-spacing: 1px;
 }
 
+html{ scroll-behavior: smooth;}
+
+/* COMIENZO */
+
 #social-media-top i{
 	color: var(--blanco);
 	padding: 0 20px;
@@ -74,7 +105,7 @@ h1,h3,h4,h5,ol,ul{
 	text-shadow: 1px 1px 6px white;
 }
 .mi-nav{
-	background-image: url(../img/p3.jpeg);
+	background-image: url(/static/img/budin2.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -180,35 +211,35 @@ h1,h3,h4,h5,ol,ul{
 }
 
 .card1{
-	background-image: url(../img/viedma.jpg);
+	background-image: url(/static/img/viedma.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card2{
-	background-image: url(../img/juli2.jpg);
+	background-image: url(/static/img/juli2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card3{
-	background-image: url(../img/contact.jpg);
+	background-image: url(/static/img/contact.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card4{
-	background-image: url(../img/p4.jpeg);
+	background-image: url(/static/img/p4.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card5{
-	background-image: url(../img/receta.jpg);
+	background-image: url(/static/img/receta.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -262,7 +293,7 @@ h1,h3,h4,h5,ol,ul{
 .card-body{
 	width:100%;
 	height: fit-content;
-	background-image: url(../img/);
+	background-image: url(/static/img/);
 }
 .card-body .link{
 	color: black;
@@ -286,7 +317,7 @@ h1,h3,h4,h5,ol,ul{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url(../img/b1a.jpg);
+	background-image: url(/static/img/b1a.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -295,18 +326,19 @@ h1,h3,h4,h5,ol,ul{
 }
 
 .carousel-item{
-	max-height:600px;
+	width:100%;
+	max-height: 75vh;
 }
 
-.carousel-item img{
-	object-fit: contain;
-}
+.carousel-item > img {
+	margin: 0 auto;
+  }
 #sobre-mi{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 75vh;
-	background-image: url(../img/a.jpg);
+	background-image: url(/static/img/a.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -369,6 +401,7 @@ h1,h3,h4,h5,ol,ul{
     padding-bottom:56.25%;
     position:relative;
     height:0;
+	border: var(--beige) 1px solid;
 }
 
 .map-responsive iframe{
@@ -388,9 +421,52 @@ h1,h3,h4,h5,ol,ul{
 	font-size: 1.9em;
 	font-family: var(--fuente-normal);
 	margin: 50px 30px;
+	margin-bottom: 0;
 	display: flex;
 }
 
 #contacto li i{
 	padding-right: 20px;
+}
+
+#social-location a i{
+	color:#000;
+}
+#social-location a i:hover{
+	color:white;
+}
+
+#mas-info{
+	height:50vh;
+}
+#mas-info .columnas a i:hover{
+	color:rgba(0, 0, 0, 0.5);
+}
+.mt-1{
+	margin-top:100px !important;
+}
+.columnas{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.columnas i{
+	padding: 10px;
+	color: var(--beige);
+}
+.columnas h1{
+	font-family: var(--fuente-cursiva);
+	font-size: 2.2em;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.columnas p{
+	font-family: var(--fuente-normal);
+	font-size: 1.3em;
+	padding-bottom: 10px;
+}
+
+@media only screen and (min-width:600px) {
+	
 }
