@@ -105,7 +105,7 @@ html{ scroll-behavior: smooth;}
 	text-shadow: 1px 1px 6px white;
 }
 .mi-nav{
-	background-image: url(../img/budin2.jpeg);
+	background-image: url(/static/img/budin2.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -211,35 +211,35 @@ html{ scroll-behavior: smooth;}
 }
 
 .card1{
-	background-image: url(../img/viedma.jpg);
+	background-image: url(/static/img/viedma.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card2{
-	background-image: url(../img/juli2.jpg);
+	background-image: url(/static/img/juli2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card3{
-	background-image: url(../img/contact.jpg);
+	background-image: url(/static/img/contact.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card4{
-	background-image: url(../img/p4.jpeg);
+	background-image: url(/static/img/p4.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card5{
-	background-image: url(../img/receta.jpg);
+	background-image: url(/static/img/receta.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -293,7 +293,7 @@ html{ scroll-behavior: smooth;}
 .card-body{
 	width:100%;
 	height: fit-content;
-	background-image: url(../img/);
+	background-image: url(/static/img/);
 }
 .card-body .link{
 	color: black;
@@ -317,7 +317,7 @@ html{ scroll-behavior: smooth;}
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url(../img/b1a.jpg);
+	background-image: url(/static/img/b1a.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -338,7 +338,7 @@ html{ scroll-behavior: smooth;}
 	align-items: center;
 	justify-content: center;
 	height: 75vh;
-	background-image: url(../img/a.jpg);
+	background-image: url(/static/img/a.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -450,6 +450,10 @@ html{ scroll-behavior: smooth;}
 	flex-direction: column;
 	justify-content: center;
 }
+
+.columnas img{
+	max-width:600px;
+}
 .columnas i{
 	padding: 10px;
 	color: var(--beige);
@@ -468,5 +472,78 @@ html{ scroll-behavior: smooth;}
 }
 
 @media only screen and (min-width:600px) {
+	.nav-item{
+		font-size: 1em; 
+		padding:0  !important;
+	}
+
+	#p1-julibio{
+		transform: translateX(0);
+	}
 	
+	#p2-julibio{
+		transform: translateX(0);
+	}
+
+	#img-juli{
+		max-width: 200px;
+		border-radius: 50%;
+		box-shadow: 0 0 1px 5px rgba(0, 0, 0, 0.3)
+	}
+	#sobre-mi{
+		height: 100vh;
+	}
+
+	#social-bio a i{
+		transform: translateX(0);
+		padding: 0;
+	}
+
+	#mas-info{
+		height:auto;
+	}
+	#mas-info .columnas a i:hover{
+		color:rgba(0, 0, 0, 0.5);
+	}
+	.mt-1{
+		margin-top:100px !important;
+	}
+	.columnas{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.columnas i{
+		padding: 10px;
+		color: var(--beige);
+	}
+	.columnas h1{
+		font-family: var(--fuente-cursiva);
+		font-size: 2em;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+	
+	.columnas p{
+		font-family: var(--fuente-normal);
+		font-size: 1.3em;
+		padding-bottom: 10px;
+	}
+
+	.columnas img{
+		margin: 60px auto;
+		max-width: 300px;
+	}
+
+	.map-responsive{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		border: var(--beige) 1px solid;
+	}
+	
+	.map-responsive iframe{
+		height:100%;
+		width:100%;
+	}
 }
