@@ -110,7 +110,7 @@ html{ scroll-behavior: smooth;}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .navbar{
@@ -184,7 +184,7 @@ html{ scroll-behavior: smooth;}
 
 }
 .espaciador{
-	height:10vh;
+	min-height:10vh;
 	background-color:var(--blanco);
 }
 
@@ -201,7 +201,7 @@ html{ scroll-behavior: smooth;}
 	justify-content:flex-end;
 	margin: 20px 10px;
 	max-width: 600px;
-	height: 400px;
+	min-height: 400px;
 	box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
 	transition: 0.5s ease background-color;  
 }
@@ -292,7 +292,7 @@ html{ scroll-behavior: smooth;}
 
 .card-body{
 	width:100%;
-	height: fit-content;
+	min-height: fit-content;
 	background-image: url(../img/);
 }
 .card-body .link{
@@ -322,7 +322,7 @@ html{ scroll-behavior: smooth;}
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 20vh;
+	min-height: 20vh;
 }
 
 .carousel-item{
@@ -337,7 +337,7 @@ html{ scroll-behavior: smooth;}
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 75vh;
+	min-height: 75vh;
 	background-image: url(../img/a.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -437,7 +437,7 @@ html{ scroll-behavior: smooth;}
 }
 
 #mas-info{
-	height:50vh;
+	min-height:50vh;
 }
 #mas-info .columnas a i:hover{
 	color:rgba(0, 0, 0, 0.5);
@@ -491,7 +491,7 @@ html{ scroll-behavior: smooth;}
 		box-shadow: 0 0 1px 5px rgba(0, 0, 0, 0.3)
 	}
 	#sobre-mi{
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	#social-bio a i{
@@ -500,7 +500,7 @@ html{ scroll-behavior: smooth;}
 	}
 
 	#mas-info{
-		height:auto;
+		min-height:auto;
 	}
 	#mas-info .columnas a i:hover{
 		color:rgba(0, 0, 0, 0.5);
