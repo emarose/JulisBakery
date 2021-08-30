@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Fredericka+the+Great&family=Niconne&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./static/img/icono.png"type="image/x-icon">
+    <link rel="shortcut icon" href="/static/img/icono.png"type="image/x-icon">
     
     <title>Juli's Bakery</title>
   </head>
@@ -24,32 +24,29 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand"> <img src="./static/img/logo.png" alt=""></a>
+        <a class="navbar-brand"> <img src="/static/img/logo.png" alt=""></a>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Sobre mi<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#scroll-sobre-mi">Sobre mi<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="#scroll-productos">Productos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Localización</a>
+                <a class="nav-link" href="#locacion">Localización</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Recetario</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#locacion">Contacto</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0" id="social-media-top">
             <span class="text-white">
-              <a href="https://www.facebook.com/RoseKingdom.Accesorios"><i class="fab fa-facebook fa-2x"></i></a>
-              <a href="https://www.instagram.com/rose_kingdom_accesorios/"><i class="fab fa-instagram fa-2x"></i></a>
-              <a href="https://api.whatsapp.com/send?phone=+542235679477"><i class="fab fa-whatsapp fa-2x"></i></a>
-              <a href="mailto:rose-kingdom@hotmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+              <a href="https://www.facebook.com/julis_bakery"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://www.instagram.com/julis_bakery.hm"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=+542235679484"><i class="fab fa-whatsapp fa-2x"></i></a>
+              <a href="mailto:#"><i class="fas fa-envelope fa-2x"></i></a>
             </span> 
           </form>
         </div>
@@ -76,17 +73,17 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card card1">
-              <button class="btn btn-card">Donde encontrarme</button>
+              <a href="#locacion" class="btn btn-card">Donde encontrarme</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card2">
-              <button class="btn btn-card">Sobre mi</button>
+              <a href="#scroll-sobre-mi" class="btn btn-card">Sobre mi</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card3">
-              <button class="btn btn-card">Contactame</button>
+              <a href="#locacion" class="btn btn-card">Contactame</a>
             </div>
           </div>
         </div>
@@ -95,12 +92,12 @@
         <div class="row">
           <div class="col-md-6">
             <div class="card card4">
-              <button class="btn btn-card">Productos destacados</button>
+              <a href="#scroll-productos" class="btn btn-card">Productos destacados</a>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card card5">
-              <button class="btn btn-card">Recetario</button>
+              <a href="#" class="btn btn-card">Recetario</a>
             </div>
           </div>
     
@@ -111,7 +108,7 @@
   
 
     <div class="wrapper">
-      <div class="titular">
+      <div class="titular" id="scroll-productos">
         <h4>PRODUCTOS</h4>
         <h3>destacados</h3>
       </div>
@@ -129,16 +126,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block" src="./static/img/p1.jpeg">
+            <img class="d-block" src="/static/img/p1.jpeg">
           </div>
           <div class="carousel-item">
-            <img class="d-block" src="./static/img/p2.jpeg">
+            <img class="d-block" src="/static/img/p2.jpeg">
           </div>
           <div class="carousel-item">
-            <img class="d-block" src="./static/img/p3.jpeg">
+            <img class="d-block" src="/static/img/p3.jpeg">
           </div>
           <div class="carousel-item">
-            <img class="d-block" src="./static/img/p4.jpeg">
+            <img class="d-block" src="/static/img/p4.jpeg">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -156,7 +153,7 @@
 
 
     <div class="wrapper">
-      <div class="titular">
+      <div class="titular" id="scroll-sobre-mi">
         <h4>SOBRE MI</h4>
       </div>
     </div>
@@ -166,7 +163,7 @@
     <div class="container-fluid text-left" id="sobre-mi">
       <div class="row">
         <div class="col-md-6">
-          <img src="./static/img/juli.jpg" class="img-fluid" id="img-juli">
+          <img src="/static/img/juli.jpg" class="img-fluid" id="img-juli">
           <h1 class="text-center">Julieta Amerio</h1>
         </div>
         <div class="col-md-6" id="sobremi-col2">
@@ -174,11 +171,9 @@
           <p>De la mano de Julieta vas a disfrutar los dulces más exquisitos, elaborados con cariño y los mejores productos para vos!</p>
           <p id="p2-julibio">No dudes en consultar por productos personalizados!</p>
           <div class="row" id="social-bio">
-            <a href=""><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-            <a href=""><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+542235679484"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/julis_bakery.hm"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
             <a href=""><i class="far fa-envelope fa-2x"></i></a>
-            <a href=""><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
-            <a href=""><i class="fab fa-facebook-messenger fa-2x" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>   
@@ -199,7 +194,7 @@
         </div>
         
         <div class="col-md-4 columnas">
-          <img src="./static/img/frutilla.png">
+          <img src="/static/img/frutilla.png">
         </div>
       
         <div class="col-md-4 columnas">
@@ -213,105 +208,8 @@
         </div>
       </div>
     </div>
-
-    <div class="container-fluid espaciador"></div>
-
-    <div class="wrapper">
-      <div class="titular">
-        <h4>RECETAS</h4>
-        <h3>fáciles y ricas</h3>
-      </div>
-    </div>
     
     <div class="container-fluid espaciador"></div>
-<!-- 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <blockquote class="blockquote">
-            <p class="mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-            </p>
-            <footer class="blockquote-footer">
-              Someone famous in <cite>Source Title</cite>
-            </footer>
-          </blockquote>
-          <h3>
-            h3. Lorem ipsum dolor sit amet.
-          </h3>
-          <p>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card">
-                <h5 class="card-header">
-                  Card title
-                </h5>
-                <div class="card-body">
-                  <p class="card-text">
-                    Card content
-                  </p>
-                </div>
-                <div class="card-footer">
-                  Card footer
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <h5 class="card-header">
-                  Card title
-                </h5>
-                <div class="card-body">
-                  <p class="card-text">
-                    Card content
-                  </p>
-                </div>
-                <div class="card-footer">
-                  Card footer
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card">
-                <h5 class="card-header">
-                  Card title
-                </h5>
-                <div class="card-body">
-                  <p class="card-text">
-                    Card content
-                  </p>
-                </div>
-                <div class="card-footer">
-                  Card footer
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <h5 class="card-header">
-                  Card title
-                </h5>
-                <div class="card-body">
-                  <p class="card-text">
-                    Card content
-                  </p>
-                </div>
-                <div class="card-footer">
-                  Card footer
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid espaciador"></div> -->
 
     <div class="wrapper">
       <div class="titular">
@@ -333,7 +231,7 @@
           <h1 class="text-center">Podes encontrarnos en Viedma - Carmen de Patagones, Río Negro, Argentina</h1>
           <ul id="contacto">
             <li>
-              <i class="fa fa-map-marker" aria-hidden="true"></i><p>Aasdasd 7000, Viedma, Rio Negro.</p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i><p>Viedma, Rio Negro.</p>
             </li>
             <li>
               <i class="fa fa-phone" aria-hidden="true"></i><p>+911 03034567</p>
@@ -355,6 +253,20 @@
     </div>
 
     <div class="container-fluid espaciador"></div>
+
+    <div class="container-fluid" id="footer">
+      <ul id="lista-footer-left">
+        <a href="#cards"><li>Conocé más</li></a>
+        <a href="#scroll-sobre-mi"><li>Sobre mi</li></a>
+        <a href="#scroll-productos"><li>Productos</li></a>
+        <a href="#locacion"><li>Contacto</li></a>
+        <p class="mt-3 text-white">Sitio diseñado por Emanuel Amerio. 2021</p>
+      </ul>
+      <div id="footer-coso">
+        <a href="www.linkedin.com/in/emanuel-amerio"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/emarose/"><i class="fab fa-github-square"></i></a>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

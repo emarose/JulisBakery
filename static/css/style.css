@@ -105,7 +105,7 @@ html{ scroll-behavior: smooth;}
 	text-shadow: 1px 1px 6px white;
 }
 .mi-nav{
-	background-image: url(../img/budin2.jpeg);
+	background-image: url(/static/img/budin2.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -211,35 +211,35 @@ html{ scroll-behavior: smooth;}
 }
 
 .card1{
-	background-image: url(../img/viedma.jpg);
+	background-image: url(/static/img/viedma.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card2{
-	background-image: url(../img/juli2.jpg);
+	background-image: url(/static/img/juli2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card3{
-	background-image: url(../img/contact.jpg);
+	background-image: url(/static/img/contact.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card4{
-	background-image: url(../img/p4.jpeg);
+	background-image: url(/static/img/p4.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .card5{
-	background-image: url(../img/receta.jpg);
+	background-image: url(/static/img/receta.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -293,7 +293,7 @@ html{ scroll-behavior: smooth;}
 .card-body{
 	width:100%;
 	min-height: fit-content;
-	background-image: url(../img/);
+	background-image: url(/static/img/);
 }
 .card-body .link{
 	color: black;
@@ -317,7 +317,7 @@ html{ scroll-behavior: smooth;}
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url(../img/b1a.jpg);
+	background-image: url(/static/img/b1a.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -338,7 +338,7 @@ html{ scroll-behavior: smooth;}
 	align-items: center;
 	justify-content: center;
 	min-height: 75vh;
-	background-image: url(../img/a.jpg);
+	background-image: url(/static/img/a.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -400,14 +400,14 @@ html{ scroll-behavior: smooth;}
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
-    height:0;
+    min-height:0;
 	border: var(--beige) 1px solid;
 }
 
 .map-responsive iframe{
     left:0;
     top:0;
-    height:100%;
+    min-height:100%;
     width:100%;
 	position:absolute;
 }
@@ -471,7 +471,46 @@ html{ scroll-behavior: smooth;}
 	padding-bottom: 10px;
 }
 
-@media only screen and (min-width:600px) {
+#footer{
+	min-height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#lista-footer-left{
+	margin-left:10px;
+}
+
+#lista-footer-left li{
+	font-size: 1.5em;
+	padding: 5px;
+	color: #000;
+}
+#lista-footer-left a li{
+	transition: 0.3s;
+}
+
+#lista-footer-left a li:hover{
+	color: #fff;
+}
+
+#footer-coso p{
+	text-align: right;
+	font-family: var(--fuente-normal);
+}
+
+#footer-coso i{
+	font-size: 1.6em;
+	padding: 10px 20px;
+	color: #000;
+}
+#footer-coso i:hover{
+	color: #fff;
+}
+
+@media only screen and (max-width:600px) {
 	.nav-item{
 		font-size: 1em; 
 		padding:0  !important;
@@ -546,4 +585,5 @@ html{ scroll-behavior: smooth;}
 		height:100%;
 		width:100%;
 	}
+
 }
